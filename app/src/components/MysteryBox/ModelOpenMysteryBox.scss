@@ -1,0 +1,241 @@
+
+h1 {
+    font-size: 45px !important;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.text-14 {
+    font-size: 14px;
+}
+
+/* MODAL */
+
+.modal {
+    width: 100% ;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    position : fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-dialog{
+        color: white;
+        width: 500px ;
+        height: 500px;
+        background: rgba(40,44,52,0.9);
+        box-shadow: 0 5px 20px 0 rgba(50, 205, 50, 0.4);
+        padding: 16px;
+        border: solid 1px rgba(50, 205, 50, 0.3);
+    }
+}
+
+.modal-content {
+    border: none;
+    border-radius: 0px !important;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+
+.modal-content input {
+    color: rgba(50, 205, 50, 1);
+    text-shadow: 0 0 8px rgba(50, 205, 50, 0.4);
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+    &:hover {
+        box-shadow: 1px 1px 8px rgba(50, 205, 50, 0.3);
+        color: rgba(50, 205, 50, 1);
+        text-shadow: 0 0 8px rgba(50, 205, 50, 0.4);
+        &.kave-btn:before {
+          left: 0;
+          width: 20px;
+        }
+        &.kave-btn:after {
+          right: 0;
+          width: 20px;
+        }
+        .kave-line:before {
+          bottom: 0;
+        }
+        .kave-line:after {
+          top: 0;
+        }
+      }
+}
+
+.form-control {
+    border-radius: 0px !important;
+    border: solid 1px rgba(50, 205, 50, 0.3);
+    background: none;
+}
+
+.modal-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+
+
+.form-group label{
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 16px;
+}
+
+.form-control:valid {
+    border: solid 1px rgba(0, 214, 252, 0.3);
+}
+
+.close {
+    color: #ffffffda;
+    opacity: 6;
+    text-shadow: 1px 1px 1px rgb(228, 228, 228);
+    outline: 0 !important;
+}
+
+.close:hover {
+    color: #0069d9;
+    opacity: 6;
+}
+
+.modal h5{
+    color: rgba(50, 205, 50, 1);
+    text-shadow: 0 0 8px rgba(50, 205, 50, 0.4);
+    font-family: "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+}
+
+.modal h4{
+    color: white;
+    text-shadow: 0 0 8px rgba(50, 205, 50, 0.4);
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+}
+
+.modal p{
+    color: white;
+    font-size: 10px;
+    font-family: "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+}
+
+.modal a{
+    color: rgba(0, 214, 252, 1);
+    text-shadow: 0 0 8px rgba(50, 205, 50, 0.4);
+    font-size: 12px;
+    font-family: "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1.8px;
+}
+
+.modal {
+    button {
+        position: relative;
+        border: solid 1px rgba(50, 205, 50, 0.3);
+        background: none;
+        color: rgba(50, 205, 50, 0.5);
+        font-family: "Helvetica Neue", sans-serif;
+        text-transform: uppercase;
+        font-weight: normal;
+        letter-spacing: 1.8px;
+        width: 100%;
+        height: 40px;
+        padding: 0;
+        transition: all 0.25s ease;
+        outline: none;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 10%;
+          width: 60px;
+          height: 1px;
+          transform: translateY(-1px);
+          background: rgba(50, 205, 50, 1);
+          transition: all 0.25s ease;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          right: 10%;
+          width: 60px;
+          height: 1px;
+          transform: translateY(1px);
+          background: rgba(50, 205, 50, 1);
+          transition: all 0.25s ease;
+        }
+        &:hover {
+          box-shadow: 1px 1px 8px rgba(50, 205, 50, 0.3);
+          color: rgba(50, 205, 50, 1);
+          text-shadow: 0 0 8px rgba(50, 205, 50, 0.4);
+          &.kave-btn:before {
+            left: 0;
+            width: 20px;
+          }
+          &.kave-btn:after {
+            right: 0;
+            width: 20px;
+          }
+          .kave-line:before {
+            bottom: 0;
+          }
+          .kave-line:after {
+            top: 0;
+          }
+        }
+      }
+      .line {
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: 30%;
+          right: 0;
+          width: 1px;
+          height: 20px;
+          transform: translateX(1px);
+          background: rgba(50, 205, 50,1);
+          transition: all 0.25s ease;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 30%;
+          left: 0;
+          width: 1px;
+          height: 20px;
+          transform: translateX(-1px);
+          background: rgba(50, 205, 50, 1);
+          transition: all 0.25s ease;
+        }
+      }
+}
+
+

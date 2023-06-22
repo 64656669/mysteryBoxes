@@ -1,0 +1,40 @@
+.intro{
+    padding: 50px 32px;
+    .title{
+        font-weight: bold;
+        font-size: 22px;
+        padding-bottom: 32px;
+        span{
+            color: #00D6FC;
+        }
+    }
+    .subtitle{
+        font-size: 18px;
+        max-width: 1080px;
+        margin: auto;
+    }
+    .list{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 50px;
+        max-width: 1080px;
+        margin: auto;
+        .item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 200px;
+            .name{
+                text-transform: uppercase;
+                border-bottom: 2px solid #00D6FC;
+                padding-bottom: 5px;
+                font-weight: bold;
+            }
+            .text{
+                text-align: center;
+            }
+        }
+
+    }
+}

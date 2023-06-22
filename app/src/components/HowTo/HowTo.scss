@@ -1,0 +1,34 @@
+.howto{
+    padding: 100px 32px;
+    position: relative;
+    .mask{
+        background: {
+            image: url(../../styles/img/commu.png);
+        };
+        opacity: 0.45;
+        position: -100px;
+    }
+    .content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 1080px;
+        margin: auto;
+        .title{
+            font-weight: bold;
+            color: #00D6FC;
+            padding-bottom: 30px;
+            font-size: 22px;
+        }
+        .text{
+            text-align: left;
+            max-width: 500px;
+            font-size: 17px;
+            span{
+                color: #00D6FC;
+            }
+        }
+        
+    }
+}
