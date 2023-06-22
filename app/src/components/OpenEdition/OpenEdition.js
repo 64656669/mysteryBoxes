@@ -38,7 +38,7 @@ function  OpenEdition(){
     };
     return(
     <div className='OpenEdition'>
-        { ConnectState
+        { ConnectState.state
             ? <button onClick={() => onClickEdition()}>
                 <span className="line"></span>
                     Open a Mystery Box 

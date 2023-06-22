@@ -1,0 +1,34 @@
+.modal {
+    width: 100% ;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    color: rgb(0, 0, 0);
+    z-index: 10;
+    position : fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.deployed-mystery{
+      .modal-dialog{
+          background: rgba(40,44,52,0.9);
+          box-shadow: 0 5px 20px 0 rgba(0, 214, 252, 0.4);
+          border: solid 1px rgba(0, 214, 252, 0.3);
+      }
+      h5.modal-title{
+        color: #00D6FC;
+      }
+      button{
+        border-color: rgba(0, 214, 252, 0.3);
+        color: rgba(0, 214, 252, 0.3);
+        &:after,
+        &:before{
+            background: rgba(0, 214, 252, 0.3);
+        }
+        &:hover {
+            box-shadow: 1px 1px 8px rgba(0, 214, 252, 0.3);
+            color: rgba(0, 214, 252, 1);
+            text-shadow: 0 0 8px rgba(0, 214, 252, 0.4);
+        }
+      }
+    }
+}

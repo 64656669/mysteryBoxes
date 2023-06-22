@@ -21,7 +21,7 @@ function  NewEdition(){
 
     return(
     <div className='newEdition'>
-        { ConnectState
+        { ConnectState.state
             ? <button onClick={() => onClickEdition()}>
                 <span className="line"></span>
                     New Mystery Box  edition

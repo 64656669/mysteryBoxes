@@ -29,9 +29,10 @@ function Menu(){
                 signer: Signer
             })
             //-------
-            setsignerAddress(await Signer.getAddress());
-            console.log("Account:", signerAddress);
-            setConnectState(!ConnectState);
+            const address = await Signer.getAddress();
+            setsignerAddress(address);
+            console.log("Account:", address);
+            setConnectState({ state: true, address: address});
         }
     }
     
@@ -44,7 +45,7 @@ function Menu(){
                 <a href="" target="_blank" className='opensea'><OpenseaLogo /></a>
             </div>
             <div className="connect-button">
-            {ConnectState 
+            {ConnectState.state
                 ? <div className='signer'>{signerAddress}</div>
                 :   <button onClick={() => connectWallet()}>
                         <span className="line"></span>
