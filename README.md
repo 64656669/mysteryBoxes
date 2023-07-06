@@ -10,6 +10,8 @@ The smart contracts are developed in Solidity, tested, and deployed on the Polyg
 
 __Note: these contracts have been created for a POC, and cannot be used as they stand in production. Security issues are remaining and need to be addressed__
 
+![IMAGE_DESCRIPTION](https://github.com/64656669/mysteryBoxes/blob/main/app/src/styles/img/jungle.png)
+
 **Overview**
 
 The application is developed in React JS.
