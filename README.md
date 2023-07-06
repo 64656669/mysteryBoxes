@@ -8,7 +8,7 @@ The BoX project explores the creation and opening of mystery boxes containing to
 
 The smart contracts are developed in Solidity, tested, and deployed on the Polygon blockchain using the Hardhat environment. The front-end is coded in Javascript, utilizing the React library.
 
-__Note: these contracts have been created for a POC, and cannot be used as they stand in production. Security issues are existing__
+__Note: these contracts have been created for a POC, and cannot be used as they stand in production. Security issues are remaining and need to be addressed__
 
 **Overview**
 
